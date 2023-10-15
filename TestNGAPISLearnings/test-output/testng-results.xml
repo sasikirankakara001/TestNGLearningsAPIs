@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-15T21:52:59 IST" name="Default suite" finished-at="2023-10-15T21:53:01 IST" duration-ms="1535">
+  <suite started-at="2023-10-15T22:10:36 IST" name="Default suite" finished-at="2023-10-15T22:10:39 IST" duration-ms="3425">
     <groups>
     </groups>
-    <test started-at="2023-10-15T21:52:59 IST" name="Default test" finished-at="2023-10-15T21:53:01 IST" duration-ms="1535">
-      <class name="testng.practices.examples.TestNGLearnings">
-        <test-method signature="googleMapAPIPost()[pri:0, instance:testng.practices.examples.TestNGLearnings@47da3952]" started-at="2023-10-15T21:52:59 IST" name="googleMapAPIPost" finished-at="2023-10-15T21:53:01 IST" duration-ms="1487" status="PASS">
+    <test started-at="2023-10-15T22:10:36 IST" name="Default test" finished-at="2023-10-15T22:10:39 IST" duration-ms="3425">
+      <class name="testng.practices.TestingPrac">
+        <test-method signature="googleMapsAPIPost()[pri:0, instance:testng.practices.TestingPrac@60bdf15d]" started-at="2023-10-15T22:10:36 IST" name="googleMapsAPIPost" finished-at="2023-10-15T22:10:39 IST" duration-ms="3297" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- googleMapAPIPost -->
-      </class> <!-- testng.practices.examples.TestNGLearnings -->
+        </test-method> <!-- googleMapsAPIPost -->
+      </class> <!-- testng.practices.TestingPrac -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

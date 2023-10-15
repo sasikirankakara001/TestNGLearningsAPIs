@@ -1,25 +1,25 @@
-package testng.practices.examples;
+package testng.practices;
 
 import org.testng.annotations.Test;
-
+import io.restassured.*;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import io.restassured.*;
+
 import static io.restassured.RestAssured.*;
 import org.hamcrest.*;
 
-public class TestNGLearnings {
-
+public class TestingPrac {
+	
 	public RequestSpecification req = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com/")
-			.setContentType(ContentType.JSON).addQueryParam("key", "qaclick123").build();
-	public ResponseSpecification res = new ResponseSpecBuilder().expectStatusCode(200)
-			.expectContentType(ContentType.JSON).build();
-
+			.addQueryParam("key","qaclick123").setContentType(ContentType.JSON).build();
+	public ResponseSpecification resp = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+	
+	
 	@Test
-	public void googleMapAPIPost() throws Exception {
+	public void googleMapsAPIPost() throws Exception {
 		given().spec(req).body("{\r\n"
 				+ "  \"location\": {\r\n"
 				+ "    \"lat\": -38.383494,\r\n"
@@ -37,7 +37,8 @@ public class TestNGLearnings {
 				+ "  \"language\": \"French-IN\"\r\n"
 				+ "}\r\n"
 				+ "\r\n"
-				+ "").when().post("maps/api/place/add/json").then().spec(res).log().all().extract().asString();
-
+				+ "").when().post("maps/api/place/add/json").then().spec(resp).log().all().extract().asString();
+		
 	}
+
 }
