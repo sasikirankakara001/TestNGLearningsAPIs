@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-15T22:10:36 IST" name="Default suite" finished-at="2023-10-15T22:10:39 IST" duration-ms="3425">
+  <suite started-at="2023-10-15T22:32:24 IST" name="Default suite" finished-at="2023-10-15T22:32:33 IST" duration-ms="8042">
     <groups>
     </groups>
-    <test started-at="2023-10-15T22:10:36 IST" name="Default test" finished-at="2023-10-15T22:10:39 IST" duration-ms="3425">
+    <test started-at="2023-10-15T22:32:24 IST" name="Default test" finished-at="2023-10-15T22:32:33 IST" duration-ms="8042">
       <class name="testng.practices.TestingPrac">
-        <test-method signature="googleMapsAPIPost()[pri:0, instance:testng.practices.TestingPrac@60bdf15d]" started-at="2023-10-15T22:10:36 IST" name="googleMapsAPIPost" finished-at="2023-10-15T22:10:39 IST" duration-ms="3297" status="PASS">
+        <test-method signature="googleMapsAPIGet()[pri:0, instance:testng.practices.TestingPrac@51e4ccb3]" started-at="2023-10-15T22:32:25 IST" name="googleMapsAPIGet" finished-at="2023-10-15T22:32:30 IST" duration-ms="5907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleMapsAPIGet -->
+        <test-method signature="googleMapsAPIPost()[pri:0, instance:testng.practices.TestingPrac@51e4ccb3]" started-at="2023-10-15T22:32:30 IST" name="googleMapsAPIPost" finished-at="2023-10-15T22:32:31 IST" duration-ms="445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleMapsAPIPost -->
+        <test-method signature="googleMapsAPIsUpdate()[pri:0, instance:testng.practices.TestingPrac@51e4ccb3]" started-at="2023-10-15T22:32:31 IST" name="googleMapsAPIsUpdate" finished-at="2023-10-15T22:32:32 IST" duration-ms="1555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleMapsAPIsUpdate -->
       </class> <!-- testng.practices.TestingPrac -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
